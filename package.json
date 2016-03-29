@@ -1,0 +1,34 @@
+{
+  "name": "dropbox",
+  "version": "1.0.0",
+  "description": "Dropbox clone for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kritarthu/node-dropbox.git"
+  },
+  "author": "Kritarth",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "archiver": "^0.21.0",
+    "chokidar": "^1.4.3",
+    "co": "^4.6.0",
+    "co-express": "^1.2.1",
+    "express": "^4.13.4",
+    "json-over-tcp": "^0.3.2",
+    "json-socket": "^0.1.2",
+    "mime-types": "^2.1.10",
+    "morgan": "^1.7.0",
+    "rimraf": "^2.5.2",
+    "safeguards": "0.0.3",
+    "simple-bodyparser": "0.0.4",
+    "songbird": "^1.0.2",
+    "trycatch": "^1.5.21",
+    "yargs": "^3.32.0"
+  }
+}
