@@ -1,28 +1,41 @@
-# CLI Utilities
+## Dropbox [(raw)](https://gist.github.com/CrabDude/040af9c1b93e350608ff/raw)
 
-This is a CLI Utilities library for Node.js submitted as [Assignment 2](http://courses.codepath.com/courses/nodejs_fast_track/unit/2#!assignment) for CodePath.
+This is a basic Dropbox clone to sync files across multiple remote folders.
 
-Time spent: 15
+Time spent: 20
 
-Completed:
+### Features
 
-*SERVER*
-* [x] Required: Should be runnable by executing
-* [x] Required: Use the CWD as the root of your file path
-* [x] Required: Setup an HTTP server listening on port 9000
-* [x] Required: Implement an HTTP route for GET, HEAD, PUT, POST, DELETE for files
-* [x] Required: Implement an HTTP route for GET, HEAD, PUT, POST, DELETE for directories
-* [x] Required: Add a CLI
-* [x] Required: Allow clients to connect and synchronize a directory via TCP
-* [x] Required: Watch for local filesystem modifications, creations and deletions
+#### Required
 
-*CLIENT*
-* [x] Required: Should be runnable by executing: npm run client
-* [x] Required: Use the CWD as the root of your file path
-* [x] Required: Connect to the server using TCP
-* [x] Required: Add a CLI
+- [x] Walkthrough Gif embedded in README
+- [x] README `Time spent:` includes the number of hours spent on the assignment
+- [x] Client can make GET requests to get file or directory contents
+- [x] Client can download a directory as an archive
+- [x] Client can make HEAD request to get just the GET headers 
+- [x] Client can make PUT requests to create new directories and files with content
+- [x] Client can make POST requests to update the contents of a file
+- [x] Client can make DELETE requests to delete files and folders
+- [x] Server will serve from `--dir` or cwd as root
+- [x] Server will sync `HTTP` modifications over TCP to the Client
+- [x] Server will sync watched file modifications (e.g., `fs.watch`) over TCP to the Client
+
+### Optional
+
+- [ ] Client supports multiple connected clients
+- [ ] Client does not need to make additional `GET` request on `"write"` update
+- [ ] Client and User will be redirected from HTTP to HTTPS
+- [ ] Client will sync back to Server over TCP
+- [ ] Client will preserve a 'Conflict' file when pushed changes preceeding local edits
+- [ ] Client can stream and scrub video files (e.g., on iOS)
+- [ ] Client can create a directory with an archive
+- [ ] User can connect to the server using an FTP client
 
 
-Walkthrough Gif:
+### Walkthrough
 
+`<Add your Walkthrough Gif here (by updating the image URL)>`
 ![Video Walkthrough](lab2.gif)
+
+
+
